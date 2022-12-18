@@ -6,10 +6,11 @@ import Data_manager
 import View_Module
 
 def MenuSelecter():
-    dectionary = {'+': 0, '-': 1, '=': 2, '*': 3, '~': 4, '0': 5, '1': 6}
+    dectionary = {'+': 0, '-': 1, '=': 2, '*': 3, '~': 4, '0': 5, '1': 6, '^': 7}
     print("Вывести предстоящие мероприятия: '+'")
     print("Вывести прошедшие мероприятия: '-'")
     print("Вывести все записи: '='")
+    print("Изменить запись: '^'")
     print("Удалить запись: '*'")
     print("Добавить запись: '~'")
     print("Удалить все: '0'")
@@ -45,3 +46,5 @@ while True:
         Data_manager.DeleteTimeSheet(all_sheet = True)
     elif select == 6:
         break
+    elif select == 7:
+        Data_manager.ChangeSheet()
