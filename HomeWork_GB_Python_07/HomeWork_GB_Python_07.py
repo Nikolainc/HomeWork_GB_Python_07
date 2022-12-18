@@ -40,7 +40,7 @@ while True:
     elif select == 3:
         Data_manager.DeleteTimeSheet()
     elif select == 4:
-        pass
+        Data_manager.AddToDataSheet()
     elif select == 5:
         Data_manager.DeleteTimeSheet(all_sheet = True)
     elif select == 6:
